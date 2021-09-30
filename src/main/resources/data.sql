@@ -1,4 +1,11 @@
+DROP TABLE IF EXISTS app_user;
+CREATE TABLE app_user (
+    id  BIGINT AUTO_INCREMENT  PRIMARY KEY,
+    user_name VARCHAR(100) NOT NULL,
+    password VARCHAR(100) NOT NULL
+);
 
+INSERT INTO app_user (user_name, password) values ('admin', '$2a$12$Mqh79dwwtgh4aCM/n8acXupxhSX4ysAqkLeLLc85xB2k/VslXrYrS');
 
 DROP TABLE IF EXISTS author;
 
